@@ -1,9 +1,9 @@
 class whats::params {
-  String  $version          = 'latest'
-  String  $provider         = 'gem'
-  String  $config           = '/etc/whats.yaml'
-  String  $puppetdb_server  = 'puppetdb'
-  String  $puppetdb_port    = '8080'
-  Array   $search_domains   = ['local']
+  $version          = 'latest'
+  $provider         = 'gem'
+  $config           = '/etc/whats.yaml'
+  $puppetdb_server  = 'puppetdb'
+  $puppetdb_port    = '8080'
+  $search_domains   = ['local']
 
   }
