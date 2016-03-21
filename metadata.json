@@ -1,6 +1,6 @@
 {
   "name": "sjoeboo-whats",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "sjoeboo",
   "summary": "Install puppet-whats gem and tempaltes a config file for you.",
   "license": "Apache-2.0",
