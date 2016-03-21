@@ -1,0 +1,15 @@
+{
+  "name": "sjoeboo-whats",
+  "version": "0.1.0",
+  "author": "sjoeboo",
+  "summary": "Install puppet-whats gem and tempaltes a config file for you.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/sjoeboo/puppet-whats.git",
+  "project_page": "https://github.com/sjoeboo/puppet-whats",
+  "issues_url": "https://github.com/sjoeboo/puppet-whats/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
