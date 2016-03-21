@@ -4,12 +4,12 @@ class whats::install (
   ) {
 
     if ! defined(Package['gcc']) {
-      packge {'gcc':
+      package {'gcc':
         ensure => installed,
       }
     }
     if ! defined(Package['ruby-devel']) {
-      packge {'ruby-devel':
+      package {'ruby-devel':
         ensure => installed,
       }
     }
