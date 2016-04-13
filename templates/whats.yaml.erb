@@ -5,3 +5,9 @@ domains:
 <% @search_domains.each do |dom| -%>
   - '<%= dom %>'
 <% end -%>
+<% if @basic_info.length > 0 -%>
+basic_info:
+<% @basic_info.each do |item| -%>
+  - '<%= item %>'
+<% end -%>
+<% end -%>
