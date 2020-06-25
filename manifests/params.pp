@@ -6,5 +6,5 @@ class whats::params {
   $puppetdb_server  = 'puppetdb'
   $puppetdb_port    = '8080'
   $search_domains   = ['local']
-  $basic_info       = ['uptime']
+  $basic_info       = []
   }
