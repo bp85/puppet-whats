@@ -1,6 +1,7 @@
 class whats::install (
-  $version  = $::whats::version,
-  $provider = $::whats::provider,
+  $version        = $::whats::version,
+  $provider       = $::whats::provider,
+  $manage_package = $::whats::manage_package,
   ) {
 
     if ! defined(Package['gcc']) {
@@ -14,9 +15,11 @@ class whats::install (
       }
     }
 
-    package {'puppet-whats':
-      ensure   => $version,
-      provider => $provider,
-      require  => [Package['gcc'],Package['ruby-devel']],
+    if $manage_package {
+      package {'puppet-whats':
+        ensure   => $version,
+        provider => $provider,
+        require  => [Package['gcc'],Package['ruby-devel']],
+      }
     }
   }

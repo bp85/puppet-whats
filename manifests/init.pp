@@ -2,6 +2,7 @@
 class whats (
   String  $version          = $::whats::params::version,
   String  $provider         = $::whats::params::provider,
+  Boolean $manage_package   = $::whats::params::manage_package,
   String  $config           = $::whats::params::config,
   String  $puppetdb_server  = $::whats::params::puppetdb_server,
   String  $puppetdb_port    = $::whats::params::puppetdb_port,
